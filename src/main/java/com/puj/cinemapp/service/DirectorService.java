@@ -39,7 +39,7 @@ public class DirectorService {
         if (optionalDirector.isPresent()) {
             Director director = optionalDirector.get();
             director.setName(dto.getName());
-            director.setBirthdate(dto.getBirthdate());
+            director.setBirthDate(dto.getBirthDate());
             director.setNationality(dto.getNationality());
             director.setBiography(dto.getBiography());
             director.setPhotoUrl(dto.getPhotoUrl());
@@ -57,7 +57,7 @@ public class DirectorService {
         DirectorDTO dto = new DirectorDTO();
         dto.setId(director.getId());
         dto.setName(director.getName());
-        dto.setBirthdate(director.getBirthdate());
+        dto.setBirthDate(director.getBirthDate());
         dto.setNationality(director.getNationality());
         dto.setBiography(director.getBiography());
         dto.setPhotoUrl(director.getPhotoUrl());
@@ -67,7 +67,7 @@ public class DirectorService {
     private Director convertToEntity(DirectorDTO dto) {
         Director director = new Director();
         director.setName(dto.getName());
-        director.setBirthdate(dto.getBirthdate());
+        director.setBirthDate(dto.getBirthDate());
         director.setNationality(dto.getNationality());
         director.setBiography(dto.getBiography());
         director.setPhotoUrl(dto.getPhotoUrl());

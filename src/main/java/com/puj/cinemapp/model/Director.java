@@ -21,7 +21,7 @@ public class Director {
     private Long id;
 
     private String name;
-    private LocalDate birthdate;
+    private LocalDate birthDate;
     private String nationality;
     private String biography;
     private String photoUrl;

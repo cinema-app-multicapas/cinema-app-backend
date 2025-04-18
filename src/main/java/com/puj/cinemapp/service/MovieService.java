@@ -79,6 +79,14 @@ public class MovieService {
         }
     }
 
+    // Get movies by director ID
+    public List<MovieDTO> getMoviesByDirector(Long directorId) {
+        return movieRepository.findByDirectorId(directorId)
+                .stream()
+                .map(this::convertToDTO)
+                .collect(Collectors.toList());
+    }
+
     // Convertir Movie a MovieDTO
     private MovieDTO convertToDTO(Movie movie) {
         MovieDTO dto = new MovieDTO();
