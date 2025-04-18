@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/movies")
-@CrossOrigin(origins = "*") // permite que Angular acceda
 public class MovieController {
 
     @Autowired
